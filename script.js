@@ -1,15 +1,14 @@
-const slides = document.querySelector(".slides")
 const slide = document.querySelectorAll('.slide')
-const leftValue = ["-924px","-1848px","-2772px","-3696px"]
 let i = 0;
 
 setInterval(() =>{
-  slides.style.left = leftValue[i]
-  i++;
-  
-  if(i > leftValue.length) {
-    i = 0; 
-    slides.style.left = "0px";
+  if(i >= slide.length) {
+    slide.forEach((s)=> s.classList.remove('active'))
+    i = 0;
+  }else{
+    slide[i].classList.add('active')
+    i++;
   }
+  
 },4000)
 
