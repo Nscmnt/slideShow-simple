@@ -1,6 +1,27 @@
 const slide = document.querySelectorAll('.slide')
 let i = 0;
 
+const h1 = document.querySelector('h1')
+
+function typeWriter(element){
+
+  const parseArray = element.innerText.split("")
+  element.innerText = ""
+
+  parseArray.forEach((letra, index) => {
+
+    setTimeout(() => {
+
+      element.innerText += letra;
+
+    }, 75 * index)
+
+  });
+
+}
+
+typeWriter(h1)
+
 window.onload = () => {  
 
   setInterval(() =>{
