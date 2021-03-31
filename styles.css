@@ -49,10 +49,10 @@ html, body{
 
 .sliders-show .before{
   display: block;
-  background-image: url(./images/previous.svg);
+  background-image: url(./images/left.png);
 
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
 
   opacity: .3;
   background-color: transparent;
@@ -72,10 +72,10 @@ html, body{
 
 .sliders-show .after{
   display: block;
-  background-image: url(./images/next.svg);
+  background-image: url(./images/right.png);
 
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
 
   opacity: .3;
   background-color: transparent;
